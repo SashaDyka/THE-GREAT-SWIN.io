@@ -20,29 +20,17 @@ body {
     padding: 0;
 }
 
-.menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    column-gap: 40px;
+.menu ul li {                
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    display: inline-block;
 }
 
-    .menu ul li a {
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-    .menu ul li {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 160%;
-        display: inline-block;
-    }
-
+.menu ul li a {                
+    text-decoration: none;
+    color: #ffffff;
+}
 .contactBtn img {
     display: block;
     width: 300px;
@@ -436,5 +424,17 @@ div.first-block
 
     nav li {
         margin-right: 10px;
+    }
+}
+
+/* Пример медиа-запроса для мобильных устройств */                  
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu ul li {
+        margin-bottom: 10px;
     }
 }
