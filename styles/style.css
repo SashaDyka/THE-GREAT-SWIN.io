@@ -1,0 +1,440 @@
+/* Верх меню */
+.header {  
+    display: flex;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+}
+
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    column-gap: 40px;
+}
+
+    .menu ul li a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .menu ul li {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 160%;
+        display: inline-block;
+    }
+
+.contactBtn img {
+    display: block;
+    width: 300px;
+    height: 43px;
+    text-decoration: none;
+    color: #FFFFFF;
+    background: #0099FF;
+    line-height: 54px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 10px;
+    border-radius: 4px;
+}
+
+/*Поле пошуку*/
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 70px 0 0 70px;
+    outline: none;
+    width: 200px; 
+}
+
+button.search-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #e60e0e;
+    color: #fff;
+    border-radius: 0 70px 70px 0;
+    cursor: pointer;
+}
+
+button.search-button:hover {
+    background-color: #850606;
+}
+
+/* Головна */
+.homeContent {
+    display: flex;
+    justify-items: stretch;
+    align-items: center;
+    margin: 0 5% 100px;
+}
+
+.homeText {
+    width: 50%;
+}
+
+    .homeText h1 {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 110%;
+        letter-spacing: -0.015em;
+        color: #333333;
+    }
+
+    .homeText p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #333333;
+    }
+
+
+.homePhoto {
+    width: 50%;
+    height: auto;
+    padding-top: 30px;
+}
+
+.homePhoto img
+{ width: 100%;}
+
+.homeBtn .start, .homeBtn .more {
+    display: inline-block;
+    margin-right: 16px;
+    width: 200px;
+    height: 53px;
+    line-height: 53px;
+    text-align: center;
+    text-decoration: none;
+    background: #fd0d0d;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.homeBtn .more {    
+    background: #FFFFFF;
+    color: #000000;
+    border-color: #000000;
+}
+
+
+/* Фермери */
+        .services, .meetOurTeam 
+        { background: rgba(0, 153, 255, 0.04); 
+            padding: 120px 80px; 
+            text-align: center; 
+            color: #333333; 
+            margin-block-start: 0; 
+            margin-block-end: 0; } 
+            
+        .meetOurTeam { padding-bottom: 210px; }
+
+        .services .servicesText h6, .meetOurTeam h6 { 
+            font-weight: 600; 
+            font-size: 20px; 
+            line-height: 130%; 
+            margin-block-start: 0; 
+            margin-block-end: 0; }
+
+        .services .servicesText h2, .meetOurTeam h2 
+        { font-weight: 700; font-size: 48px; line-height: 138%; }
+
+        .meetText { width: 494px;
+            margin: 0 auto}
+
+        .meetItems 
+        {display: flex; 
+        justify-content: center; 
+        gap: 16px; 
+        margin-top: 60px; }
+
+        .mItem{ position: relative; }
+
+        .meetItems .mItem img { width: 308px; border-radius: 5px; }
+
+        .meetItems .mItem .mItemDesc .contact img
+        { width: 15px; padding-right: 8px; }
+
+        .meetItems .mItem .mItemDesc 
+        { background: #FFFFFF; 
+            position: absolute; 
+            top: 80%; left: 24px; 
+            right: 24px; 
+            height: 133px; 
+            box-shadow: 0px 10px 20px rgba(164, 217, 253, 0.15); 
+            border-radius: 5px; 
+            text-align: left; }
+
+        .meetItems .mItem .mItemDesc .contact
+         { padding-left: 8px; padding-top: 8px; }
+
+        .meetItems .mItem .mItemDesc .name
+        { padding-left: 8px; 
+            padding-top: 16px; 
+            font-weight: 700; 
+            font-size: 24px; 
+            line-height: 28px; 
+            color: #333333; }
+
+      .meetItems .mItem .mItemDesc .position 
+      { padding-left: 8px; 
+        padding-top: 16px; 
+        font-weight: 400; 
+        font-size: 18px; 
+        line-height: 160%; 
+        color: #494949; }
+
+
+
+/* Фото з ферми */
+.containerFermerPhoto{
+
+    text-align: center;
+    /*justify-items: stretch;display: flex;
+    align-items: center;
+    margin: 0 5% 100px;
+    padding: 120px 80px; 
+            text-align: center; 
+            margin-block-start: 0; 
+            margin-block-end: 0;
+            padding-bottom: 210px;*/   
+}
+
+.contentFermerPhoto {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* osnova-text */
+.osnova-text
+{
+    font-size: 40px;
+    text-align:center;
+    padding-top: 110px;
+    padding-bottom: 70px;
+}
+
+/* Фото */
+
+.osn-infa
+{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width:100em;
+}
+
+.art-photo
+{
+    width: 350px;
+    height: 350px;
+}
+
+.art-opusanie
+{
+   position: absolute;
+   padding-left: 126px; 
+   padding-top: 180px;
+   color: rgb(255, 255, 255);
+}
+
+.art-blok {
+    padding-right: 80px;
+    padding-left: 50px;
+    margin: 20px;
+  }
+
+  
+
+/*  Пропозиція */
+.index-mind 
+{ height: 348px; min-height: 100%;
+background-color: #333333; }
+
+.index-mind .row 
+{ width: 100%; 
+    height: 100%; 
+    display: flex; 
+    flex-wrap: wrap; }
+
+.index-mind .col-1 
+{ width: 8.33%; }
+
+.index-mind .col-5 
+{ width: 41.667%; 
+    display: flex; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    align-content: center; 
+    box-sizing: border-box; 
+    padding-left: 100px; }
+
+.index-mind .col-5 .btn 
+{ margin: 0 16px 0 0; 
+    padding: 6px 12px; 
+    color: #FFFFFF; 
+    background: #fd0d0d; 
+    border-width: 0; 
+    font-size: 1rem; 
+    font-weight: 400; }  
+    
+.index-mind h4 
+{ font-weight: 700; 
+    font-size: 32px; 
+    color: #FFFFFF; 
+    margin-block-start: 0; 
+    margin-block-end: 0; 
+    line-height: 1.2; 
+    margin-bottom: 0.5rem; }   
+
+.index-mind p 
+{ font-weight: 400; 
+    font-size: 18px; 
+    color: #FFFFFF; 
+    padding-right: 80px;
+    margin-block-start: 0;
+    margin-block-end: 0; 
+    margin-bottom: 1rem; 
+    line-height: 1.5; }
+
+.index-mind .b-mind-button 
+{ display: inline-block; 
+    width: 200px; 
+    border-radius: 4px; 
+    height: 53px; 
+    margin-right: 16px; }
+    
+
+/* Підвал */
+.index-footer 
+{ display: flex; align-items: center; 
+    flex-wrap: wrap; align-content: center; 
+    background-color: rgba(0, 153, 255, 0.04); height: 470px; } 
+    
+.index-footer .col-3 
+{ width: 24.999%; box-sizing: border-box; }
+
+.index-footer .col-2 
+{ width: 16.667%; box-sizing: border-box;}
+
+.index-footer .col-4 
+{ width: 33.332%; box-sizing: border-box; }
+
+.index-footer ul 
+{ margin-block-start: 0; margin-block-end: 0; padding-inline-start: 0; }
+
+.index-footer .col-2 h6, .index-footer .col-3 h6 
+{ padding-top: 32px; font-weight: 600; font-size: 20px; }
+
+div.first-block 
+{ padding-left: 80px; } 
+
+.first-block > a img 
+{ width: 15px; background-color: #FFFFFF; padding: 5px;
+     border-radius: 5px; box-sizing: content-box; } 
+
+.first-block .b-logo, .first-block p 
+{ padding-bottom: 32px; } 
+
+.first-block p 
+{ padding-right: 34px; margin-block-end: 0; }
+
+.first-block .b-logo, .first-block p 
+{ padding-bottom: 32px; }
+
+.b-logo img 
+{ width: 168px; height: auto;}
+
+
+.f-menu, .f-utpages 
+{ margin-top: 40px; } 
+
+.f-menu ul 
+{ padding-inline-start: 0px; } 
+
+.f-menu li a, .f-utpages li a 
+{ font-weight: 400; font-size: 18px; color: #494949; } 
+
+.f-menu li, .f-utpages li 
+{ margin-bottom: 20px; }
+
+.text-align-left 
+{ text-align: left;} 
+
+.list-unstyled 
+{ list-style: none; }
+
+.text-decoration-none 
+{ text-decoration: none; }
+
+.index-footer .f-sub input, .index-footer .f-sub button 
+{ border: 0; }
+
+.f-sub h6 
+{ font-weight: 700; font-size: 20px; margin-bottom: 40px; }
+
+.f-sub p 
+{ font-weight: 400; font-size: 18px; margin-bottom: 32px; padding-right: 20px; }
+
+.index-footer .f-sub input 
+{ font-size: inherit; }
+
+.f-sub input 
+{ display: block; 
+    width: 308px; 
+    height: 54px; 
+    background: #333333; 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 4px; 
+    padding-left: 20px; 
+    margin-bottom: 24px; }
+
+.f-sub button 
+{ width: 200px; 
+    height: 54px; 
+    background: #fd0d0d; 
+    border-radius: 4px; 
+    font-weight: 400;
+    font-size: 18px; }
+
+.index-footer .f-sub button 
+{ color: #FFFFFF; }
+
+/* Медиа-запрос для устройств с шириной экрана до 600px */
+@media (max-width: 600px) {
+    header {
+        font-size: 18px;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+}
