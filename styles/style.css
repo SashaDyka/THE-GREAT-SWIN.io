@@ -26,7 +26,9 @@ body {
     line-height: 160%;
     display: inline-block;
 }
-
+.menu li {
+    margin-right: 15px; 
+}
 .menu ul li a {                
     text-decoration: none;
     color: #ffffff;
